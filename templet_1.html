@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Invoice 1</title>
+    <style>
+        .Invoice {
+            width: 793px;
+            min-height: 1096px;
+            /* padding: 2cm; */
+            margin: 1cm auto;
+            border: 1px #D3D3D3 solid;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+
+        }
+
+        .Invoice h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .invoiceHead {
+            background-color: #74edf5;
+            height: 25vh;
+            width: 100;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+
+        }
+
+        .invoiceHead h1 {
+            color: blue;
+            padding: 20px;
+            font-weight: 900;
+            font-size: 8vh;
+
+
+
+        }
+
+        .invoiceBodyHead {
+            background-color: #fff;
+            height: 20vh;
+            width: 100;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .invoiceBodyHead #billto p {
+            font-size: x-large;
+        }
+
+        .tablehead {
+            background: #fff;
+            height: 5vh;
+            width: 100;
+            border: 3px #D3D3D3 solid;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .tablehead-column-left {
+            display: flex;
+            justify-content: space-between;
+
+        }
+     
+        .tablebody .tablebody-row{
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid #ccc;
+        }
+        .invoice-bottom{
+            height: 20vh;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            position: absolute;
+            bottom: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Invoice">
+        <div class="invoiceHead">
+            <h1>Invoice</h1>
+            <div>
+                <p>Lorem ipsum dolor sit<br> amet consectetur adipisicing <br>elit. Qui quis </p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit <br>amet consectetur, <br>adipisicing elit. Quod, cum!</p>
+            </div>
+        </div>
+
+        <div class="invoiceBodyHead">
+            <div id="billto">
+                <strong>
+                    <p>Billed To</p>
+                </strong>
+                <p>Client name<br>
+                    Street address <br>
+                    City, State, Country</p>
+            </div>
+            <div id="billto">
+                <strong>
+                    <p>Company Name</p>
+                </strong>
+                <p> <strong>
+                    Invoice no
+                </strong><br>
+                    Street address <br>
+                    City, State, Country</p>           
+                 </div>
+
+        </div>
+        <div class="tablehead">
+            <strong>
+                <p>DESCRIPTION</p>
+            </strong>
+            <strong>
+                <p>UNIT COST</p>
+            </strong>
+            <strong>
+                <p>QTY</p>
+            </strong>
+            <strong>
+                <p>AMOUNT</p>
+            </strong>
+
+        </div>
+
+        <div class="tablebody">
+            <div class="tablebody-row">
+                <p>description 1</p>
+                <p>description 1</p>
+                <p>description 1</p>
+                <p>description 1</p>
+            </div>
+            <div class="tablebody-row">
+                <p>description 1</p>
+                <p>description 1</p>
+                <p>description 1</p>
+                <p>description 1</p>
+            </div>
+            <div class="tablebody-row">
+                <p>description 1</p>
+                <p>description 1</p>
+                <p>description 1</p>
+                <p>description 1</p>
+            </div>
+            <div class="tablebody-row">
+                <p>description 1</p>
+                <p>description 1</p>
+                <p>description 1</p>
+                <p>description 1</p>
+            </div>
+            <div class="tablebody-row">
+                <p>description 1</p>
+                <p>description 1</p>
+                <p>description 1</p>
+                <p>description 1</p>
+            </div>
+            <div class="tablebody-row">
+                <p>description 1</p>
+                <p>description 1</p>
+                <p>description 1</p>
+                <p>description 1</p>
+            </div>
+            <div class="tablebody-row">
+                <p>description 1</p>
+                <p>description 1</p>
+                <p>description 1</p>
+                <p>description 1</p>
+            </div>
+            <div class="tablebody-row">
+                <p>description 1</p>
+                <p>description 1</p>
+                <p>description 1</p>
+                <p>description 1</p>
+            </div>
+        </div>
+        <div class="invoice-bottom">
+            <div>
+                Client Signature
+            </div>
+            <div>
+                Company Owner Signature
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

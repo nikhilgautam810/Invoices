@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .invoice {
+            width: 793px;
+            min-height: 1096px;
+            margin: 20mm auto;
+            /* Centered on the page */
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+
+        }
+
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(40, 13, 220);
+
+
+        }
+
+        .invoice-header {
+            display: flex;
+            justify-content: space-between;
+            background: #f5f5f5;
+            padding: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .invoice-header-name {
+
+            text-align: right;
+            margin-bottom: 10px;
+
+        }
+
+        .itemhead {
+            display: flex;
+            padding: 20px;
+            flex-direction: column;
+            background-color: #f5f5f5;
+            margin-bottom: 20px;
+        }
+
+
+        .invoice-header-img {
+
+            flex-grow: 1;
+            text-align: left;
+            margin-left: 20px;
+
+        }
+
+        .invoice-details {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f5f5f5;
+            margin-bottom: 20px;
+        }
+
+        .item-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .item-row:last-child {
+            border-bottom: none;
+        }
+
+        .invoice-total {
+            text-align: right;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+        }
+
+        .invoice-signature {
+            position: relative;
+            bottom: 0dvh;
+            text-align: right;
+            right: 20px;
+
+        }
+        .description{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invoice">
+
+        <div class="invoice-header">
+            <div class="invoice-header-img">
+                <img src='https://i.postimg.cc/63rMjjZy/Flex-Machine-PNG-Photo.png' width="300" height="200" }>
+
+            </div>
+            <div class="invoice-header-name">
+                <h1>Om Sai Advertising</h1>
+                <h4>Flex printing, Glow Shine Board, <br> ACP Letter Board, Flex Calender</h4>
+                <p><strong>Address</strong> : Behind CBSE School, <br> Dhanikutiya, Adhartal, Jabalpur (MP)</p>
+
+            </div>
+        </div>
+        <div class="invoice-details">
+            <div class="invoice-details-costumer">
+                <h4><strong>Costumer Name :</strong> ${name}</h4>
+                <p><strong>Costumer Phone :</strong> ${phone} </p>
+                <p><strong>Costumer Email :</strong> ${email}</p>
+                <p><strong>Costumer Address:</strong> ${address} </p>
+            </div>
+            <div class="invoice-details-companydetailes">
+                <h4><strong>Invoice Number:</strong> ${invoice}</h4>
+                <p><strong>Date:</strong> August 10, 2023</p>
+                <p><strong>Email:</strong> omsaiadjbp@gmail.com</p>
+
+            </div>
+        </div>
+        <div class="itemhead">
+
+            <div class="invoice-items">
+                <div class="item-row">
+                    <div class="item-description">
+                        <strong>Flex Type : ${flexType} </strong>
+                    </div>
+                    <div class="item-amount">
+                        <strong>Flex Rate : ${flexRate}</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="invoice-items">
+                <div class="item-row">
+                    <div class="item-description">
+                        <strong> Total Square Feet : ${squareFeet}</strong>
+                    </div>
+                    <!-- <div class="item-amount">
+                            <strong>Frame Type : ${}</strong>
+                            </div> -->
+                </div>
+            </div>
+            <div class="invoice-items">
+                <div class="item-row">
+                    <div class="item-description">
+                        <strong> Board Type : ${boardType}</strong>
+                    </div>
+                    <div class="item-amount">
+                        <strong>Board Rate : ${boardRate}</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="invoice-items">
+                <div class="item-row">
+                    <div class="item-description">
+                        <strong> Frame Type : ${frame}</strong>
+                    </div>
+                    <div class="item-amount">
+                        <strong>Frame Rate : ${frameRate}</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="invoice-items">
+                <div class="item-row">
+                    <div class="item-description">
+                        <strong> No of Board : ${noOfBoard}</strong>
+                    </div>
+                    <div class="item-amount">
+                        <strong>Composing Fee : ${composingFee}</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="invoice-items">
+            <div class="item-row">
+                <div class="item-description">
+                    Flex
+                </div>
+                <div class="item-amount">
+                    $100.00
+                </div>
+            </div>
+            <div class="item-row">
+                <div class="item-description">
+                    Frame
+                </div>
+                <div class="item-amount">
+                    $75.00
+                </div>
+            </div>
+            <div class="item-row">
+                <div class="item-description">
+                    Composing Fee
+                </div>
+                <div class="item-amount">
+                    $75.00
+                </div>
+            </div>
+        </div>
+        <div class="invoice-total">
+            <p><strong>Total:</strong> $250.00</p>
+        </div>
+        <div class="invoice-signature">
+            <img src='https://i.postimg.cc/d3xFX1KB/signfinal-removebg-preview.png' width="200" height="100" }>
+            <p><strong>Manish Tiwari</strong></p>
+            <p><strong>Signature</strong></p>
+        </div>
+        <div class="description">
+            <p>We can print your any type design as you want in less time, After that we can fix that board where you want, Give us one chance to show our skills.....</p>
+            <strong>Thanks for visiting us</strong>
+        </div>
+    </div>
+</body>
+
+</html>
